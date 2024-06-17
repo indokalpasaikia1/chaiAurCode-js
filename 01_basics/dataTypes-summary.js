@@ -21,6 +21,27 @@ let obj = {
 }
 const myFunction = function(){ console.log("Hello World.")}
 
-console.log(typeof(bigNumber));// bigint
-console.log(typeof(myFunction));// function object
-console.log(typeof(heros));//object
+// console.log(typeof(bigNumber));// bigint
+// console.log(typeof(myFunction));// function object
+// console.log(typeof(heros));//object
+
+// ********** Memory **********
+// 2 types of memories.
+// Stack(primitives) and Heap(Non-primitive/reference)
+
+let myYouTubeName = "indokalpa"
+let anotherName = myYouTubeName
+anotherName = "chaiAurCode"
+
+console.log(myYouTubeName);// indokalpa
+console.log(anotherName);// myYouTubeName as we get copy of 'myYouTubeName' in Stack.
+
+let userOne = {
+    email : "indokalpa@gmail.com",
+    upi : "user@sbi"
+}
+let userTwo = userOne
+userTwo.email = "indokalpa@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);// both same as we get the reference in Heap.
