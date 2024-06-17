@@ -36,13 +36,13 @@
 // ********** operations **********
 // let value = 3;
 // let negValue = -value;
-// //console.log(negValue);
+// console.log(negValue);
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);// 2 raised to power 3
+// console.log(2**3); 2 raised to power 3
 // console.log(2/2);
-// console.log(2%3);// remainder
+// console.log(2%3); remainder
 
 // let str1 = "hello "
 // let str2 = "indokalpa"
@@ -50,9 +50,9 @@
 // console.log(str3);
 
 // console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);// we get 122 instead of 14 as 'string' first. 
-// console.log(1 + 2 + "2");// we get 32 here.
+// console.log(1 + "2"); we get 12.
+// console.log("1" + 2 + 2); we get 122 instead of 14 as 'string' first.But ultimately converted to 'string'. 
+// console.log(1 + 2 + "2"); we get 32 here.
 
 console.log(+true);// converted to Number.
 console.log(+"");// converted to Number.
@@ -60,3 +60,8 @@ console.log(+"");// converted to Number.
 let num1, num2, num3
 num1 = num2 = num3 = 2+2
 console.table([num1,num2,num3])
+
+let gameCounter = 100;
+console.log(++gameCounter);// increase gameCounter first then print
+console.log(gameCounter++);// increase gameCounter first then print
+console.log(gameCounter);
