@@ -1,15 +1,15 @@
-const name = "indo-kalpa"
+const name = "indo-kalpa"// name is primitive here.
 const repoCount = 50
 
 //console.log(name + repoCount + " value");
 
 //console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`);// string interpolation-insert values in a string
 
-const gameName = new String("indo-kalpa") // 'new' for dynamic memory allocation of Obj.
-//console.log(gameName[0]);// acces 0th key
+const gameName = new String("indo-kalpa") // 'new' for dynamic memory allocation of Obj.It is object of type string.
+//console.log(gameName[0]);// access 0th key
 
 // console.log(gameName.length)// 9
-// console.log(gameName.toUpperCase())// INDOKALPA.original string is not changed
+// console.log(gameName.toUpperCase())// INDOKALPA.original string is also changed as reference type.
 // console.log(gameName.charAt(2))// d
 // console.log(gameName.indexOf('d'))// 2
 
